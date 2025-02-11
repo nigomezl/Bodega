@@ -13,6 +13,7 @@ import java.io.FileWriter;
 import java.io.Reader;
 import java.util.List;
 
+
 public class DB {
     public static void guardar(Set<Camara> productos) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create(); // JSON legible

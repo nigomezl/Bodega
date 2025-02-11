@@ -1,92 +1,29 @@
 [
   {
-    "Dispositivo": "taaa",
-    "Empresa": "taaaa",
-    "Resolucion": 1,
-    "FPS": 1,
-    "Precio": 1,
-    "Dimension": 1,
-    "Cantidad": 1
-  },
-  {
-    "Dispositivo": "PARACETAMOL",
-    "Empresa": "nadaquever",
-    "Resolucion": 0,
-    "FPS": 0,
-    "Precio": 0,
-    "Dimension": 0,
-    "Cantidad": 100
-  },
-  {
-    "Dispositivo": "pur",
-    "Empresa": "pur",
-    "Resolucion": 6,
-    "FPS": 6,
-    "Precio": 6,
-    "Dimension": 6,
-    "Cantidad": 1254
-  },
-  {
-    "Dispositivo": "DUR",
-    "Empresa": "DA",
-    "Resolucion": 100,
-    "FPS": 120,
-    "Precio": 75000,
-    "Dimension": 500,
+    "Dispositivo": "b",
+    "Empresa": "b",
+    "Resolucion": 5,
+    "FPS": 15,
+    "Precio": 50,
+    "Dimension": 111,
     "Cantidad": 10
   },
   {
-    "Dispositivo": "DADA",
-    "Empresa": "31x",
-    "Resolucion": 32,
-    "FPS": 30,
-    "Precio": 25000,
-    "Dimension": 100,
-    "Cantidad": 5
+    "Dispositivo": "c",
+    "Empresa": "c",
+    "Resolucion": 101,
+    "FPS": 180,
+    "Precio": 150,
+    "Dimension": 190,
+    "Cantidad": 200
   },
   {
-    "Dispositivo": "abs",
-    "Empresa": "HP",
-    "Resolucion": 16,
-    "FPS": 60,
-    "Precio": 25000,
-    "Dimension": 150,
-    "Cantidad": 100
-  },
-  {
-    "Dispositivo": "SURA",
-    "Empresa": "HP",
-    "Resolucion": 100,
-    "FPS": 120,
-    "Precio": 80000,
-    "Dimension": 450,
-    "Cantidad": 10
-  },
-  {
-    "Dispositivo": "GPro",
-    "Empresa": "adad",
+    "Dispositivo": "a",
+    "Empresa": "a",
     "Resolucion": 10,
-    "FPS": 60,
-    "Precio": 15000,
-    "Dimension": 250,
-    "Cantidad": 15
-  },
-  {
-    "Dispositivo": "da",
-    "Empresa": "1421",
-    "Resolucion": 1,
-    "FPS": 5,
-    "Precio": 24,
-    "Dimension": 612,
-    "Cantidad": 31
-  },
-  {
-    "Dispositivo": "CURU",
-    "Empresa": "PARA",
-    "Resolucion": 1,
-    "FPS": 1,
-    "Precio": 1,
-    "Dimension": 2,
-    "Cantidad": 4
+    "FPS": 20,
+    "Precio": 5,
+    "Dimension": 11,
+    "Cantidad": 1
   }
 ]

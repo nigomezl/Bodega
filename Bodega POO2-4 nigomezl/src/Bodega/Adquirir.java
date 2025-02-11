@@ -197,7 +197,7 @@ public class Adquirir extends javax.swing.JFrame {
     }//GEN-LAST:event_lblProductoActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Camara producto = new Camara(lblProducto.getText(), lblEmpresa.getText(), Integer.parseUnsignedInt(lblResolucion.getText()), Integer.parseUnsignedInt(lblFPS.getText()), Integer.parseUnsignedInt(lblDimension.getText()), Integer.parseUnsignedInt(lblPrecio.getText()), Integer.parseUnsignedInt(lblCantidad.getText()));
+        Camara producto = new Camara(lblProducto.getText(), lblEmpresa.getText(), Integer.parseInt(lblResolucion.getText()), Integer.parseInt(lblFPS.getText()), Integer.parseInt(lblDimension.getText()), Integer.parseInt(lblPrecio.getText()), Integer.parseInt(lblCantidad.getText()));
         gui.AgregarProducto(producto);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

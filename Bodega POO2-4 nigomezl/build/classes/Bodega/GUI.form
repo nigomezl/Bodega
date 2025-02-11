@@ -126,7 +126,6 @@
               </Properties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable(modelo)"/>
-                <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="modelo.addColumn(&quot;Dispositivo&quot;);&#xa;modelo.addColumn(&quot;Empresa&quot;);&#xa;modelo.addColumn(&quot;Resoluci&#xf3;n&quot;);&#xa;modelo.addColumn(&quot;FPS&quot;);&#xa;modelo.addColumn(&quot;Dimensi&#xf3;n&quot;);&#xa;modelo.addColumn(&quot;Precio&quot;);&#xa;modelo.addColumn(&quot;Cantidad&quot;);&#xa;modelo.addColumn(&quot;Objeto&quot;);"/>
               </AuxValues>
             </Component>
           </SubComponents>

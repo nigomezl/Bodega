@@ -6,6 +6,7 @@ package Bodega;
 
 import javax.swing.table.DefaultTableModel;
 import java.util.*;
+import java.lang.*;
 import javax.swing.JOptionPane;
 /**
  *
@@ -18,7 +19,24 @@ public class GUI extends javax.swing.JFrame {
     public GUI() {
         initComponents();
     }
-    DefaultTableModel modelo = new DefaultTableModel();
+    DefaultTableModel modelo = new DefaultTableModel(
+    new Object[][]{}, // Matriz vacía de datos
+    new String[]{"Dispositivo", "Empresa", "Resolución", "FPS", "Dimensión", "Precio", "Cantidad"} // Nombres de columnas
+) {
+    @Override
+    public Class<?> getColumnClass(int columnIndex) {
+        switch (columnIndex) {
+            case 2: // Resolución
+            case 3: // FPS
+            case 4: // Dimensión
+            case 5: // Precio
+            case 6: // Cantidad
+                return Integer.class; // Estas columnas serán tratadas como números
+            default:
+                return String.class; // El resto serán cadenas de texto
+        }
+    }
+};
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -31,14 +49,6 @@ public class GUI extends javax.swing.JFrame {
         jFrame1 = new javax.swing.JFrame();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        modelo.addColumn("Dispositivo");
-        modelo.addColumn("Empresa");
-        modelo.addColumn("Resolución");
-        modelo.addColumn("FPS");
-        modelo.addColumn("Dimensión");
-        modelo.addColumn("Precio");
-        modelo.addColumn("Cantidad");
-        modelo.addColumn("Objeto");
         jTable1 = new javax.swing.JTable(modelo);
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -159,8 +169,8 @@ public class GUI extends javax.swing.JFrame {
                 return;
             }
         }
-        productos.add(producto);
-        modelo.addRow(new Object[]{producto.getDispositivo(), producto.getEmpresa(), producto.getResolucion(), producto.getFPS(), producto.getDimension(), producto.getPrecio(), producto.getCantidad(), producto});
+        modelo.addRow(new Object[]{producto.getDispositivo(), producto.getEmpresa(), 
+            producto.getResolucion(), producto.getFPS(), producto.getDimension(), producto.getPrecio(), producto.getCantidad(), producto});
 //{producto.getDispositivo(), producto.getEmpresa(), producto.getResolucion(), producto.getFPS(), producto.getDimension(), producto.getPrecio(), producto.getCantidad()}));
     }
     
@@ -171,6 +181,7 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+
         HashSet data = DB.cargar();
         System.out.println(DB.cargar());
         Iterator<Camara> iterador1 = data.iterator();
